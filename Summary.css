@@ -1,0 +1,99 @@
+.card{
+    display: flex;
+    border: 0.1rem solid rgb(242, 237, 237);
+    border-radius: 10%;
+    width: 35rem;
+    margin: auto;
+    margin-top: 10rem;
+    font-family:'Hanken Grotesk', sans-serif;
+    
+}
+.card-image{
+    border: 0.1rem solid rgb(242, 237, 237);
+    border-radius: 10%;
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 12rem;
+    padding: 2rem;
+    text-align: center;
+}
+.box{
+    border: 0.1rem solid hsla(241, 81%, 54%,0);
+    border-radius: 50%;
+    width: 8rem;
+    margin: auto;
+    background-image: linear-gradient( hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0));
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    align-self: center;
+    margin-bottom: -1rem;
+}
+p{
+    color:hsl(241, 100%, 89%);
+    font-size: 14px;
+    /* margin-top: 0; */
+}
+h2{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+}
+
+.summary{
+    color: hsl(224, 30%, 27%);
+    padding-left: 1rem;
+}
+.summary-data{
+    display: flex;
+    margin: 1rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    /* background-color: hsl(0, 100%, 67%); */
+}
+.icon{
+    padding-right: 1rem ;
+}
+.category{
+    padding-right: 7rem;
+}
+.score{
+    color: rgb(161, 156, 156);
+    
+}
+button{
+    background-color: hsl(224,30%,27%);
+    width: 15rem;
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%);
+    padding: 0.7rem;
+    border: none;
+    border-radius: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+button:active{
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+}
+@media screen and (max-width: 375px) {
+    .card{
+        flex-direction: column;
+        width: 100%;
+        border: none;
+        margin-top: 0;
+    }
+    .card-image{
+        width: 85%;
+        margin: 0;
+        margin-top: -2rem;
+    }
+    .summary{
+        font-size: 1.2rem;
+    }
+    button{
+        width: 90%;
+        padding: 1rem;
+    }
+
+}
